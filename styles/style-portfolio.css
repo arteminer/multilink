@@ -149,30 +149,22 @@ header a:nth-child(2){
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        gap: 3vw;
+        gap: 5vw;
     }
     
     .block{
-        border-radius: 1vw;
+        border-radius: 12px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
-        width: 63vw;
-        height: 16vw;
+        width: 90vw;
+        height: 34vw;
         background-color: #FCE4D8;
-        border: #001858 solid 0.3vw;
+        border: #001858 solid 2px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding-left: 1.8vw;
+        padding-left: 5vw;
         padding-right: 1vw;
-        gap: 1.3vw;
-    }
-
-    .icon{
-        border: #001858 solid 0.3vw;
-        border-radius: 1vw;
-        height: 12vw;
-        background-size: contain;
-        background-repeat: no-repeat;
+        gap: 2vw;
     }
     
     .title{
@@ -183,7 +175,7 @@ header a:nth-child(2){
     
     .block__main__text{
         font-family: "Ubuntu", sans-serif;
-        font-size: 3.2vw;
+        font-size: 3.6vw;
         font-weight: 400;
     }
 
@@ -208,24 +200,9 @@ header a:nth-child(2){
     .icon{
         border: #001858 solid 2px;
         border-radius: 1vw;
-        height: 20vw;
+        height: 22vw;
         background-size: contain;
         background-repeat: no-repeat;
-    }
-
-    .block{
-        border-radius: 3vw;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
-        width: 328px;
-        height: 140px;
-        background-color: #FCE4D8;
-        border: #001858 solid 4px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-left: 1.8vw;
-        padding-right: 1vw;
-        gap: 1.3vw;
     }
 
     header{
@@ -252,7 +229,7 @@ header a:nth-child(2){
     }
 
     .author{
-        padding-top: 32vw;
+        padding-top: 20vw;
         font-family: "Lato", sans-serif;
         font-weight: 700;
         font-size: 3.5vw;
