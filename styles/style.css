@@ -233,8 +233,8 @@ bongo cat*/
     background-image: url(../images/click.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 5vw;
-    height: 5vw;
+    width: 10vw;
+    height: 10vw;
     z-index: 3;
 }
 
@@ -243,8 +243,8 @@ header .click{
 }
 
 .main_links .click{
-    transform: translate(12vw, 20vw);
-    z-index: 2
+    transform: translate(30vw, 50vw);
+    z-index: 2;
 }
 
 .block1{
