@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" />
     <link rel="stylesheet" href="styles\style.css">
-    <script src="scripts/playSound.js"></script>
     <title>Главная</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="burger-menu">
+            <span></span>
+        </div>
+        <div class="click">
+
+        </div>
+        <nav class="burger-menu-content">
+            <div class="first-section">
+                <div class="close_button"></div>
+                <div class="smile_cat"></div>
+            </div>
+            <div class="links-section">
+                <a href="https://ru.pinterest.com/k3ymm/">pinterest</a>
+                <a href="https://namemc.com/profile/ArtemInMine.1">namemc</a>
+                <a href="https://learn.kodland.org/ru/user/730044/profile">kodland</a>
+                <a href="https://www.roblox.com/users/10251657/profile">roblox</a>
+                <a href="">xbox</a>
+            </div>
+            <div class="bongo-cat-section">
+                ???
+            </div>
+        </nav>
+        <nav class="main-nav">
             <a>Главная</a>
             <a href="portfolio.html">Портфолио</a>
         </nav>
@@ -36,7 +57,11 @@
                 <div class="pustota">Пустое пространство, а что тут еще должно быть?</div>
             </div>
             <div class="main_links">
-                <div onclick="playAudio('sounds/meow.mp3')" class="block1 block"></div>
+                <div onclick="playAudio('sounds/meow.mp3')" class="block1 block">
+                    <div class="click">
+
+                    </div>
+                </div>
                 <div onclick="location.href='https://github.com/arteminer';" class="block2 block"></div>
                 <div onclick="location.href='https://discordapp.com/users/577047174400049162/ ';" class="block3 block"></div>
                 <div onclick="location.href='https://www.donationalerts.com/r/arteminmine';" class="block4 block"></div>
@@ -50,5 +75,7 @@
         </div>
         <div class="author">by K3yM</div>
     </main>
+    <script src="scripts/playSound.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
 </body>
 </html>

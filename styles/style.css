@@ -24,31 +24,148 @@ body a{
 }
 
 header{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 12vw;
+    margin-left: 0;
+    width: 100%;
 }
 
-header nav{
-    padding-top: 2%;
+.main-nav{
+    gap: 11.5vw;
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
 
-header a{
+.burger-menu{
+    cursor: pointer;
+    margin-left: 6.7vw;
+    width: 12vw;
+    height: 6vw;
+    background-size: cover;
+    background-image: url(../images/cat_icon.png);
+}
+
+/*bongo cat
+.bongo-cat-section.active{
+    transition: 0.5s ease;
+    height: 100px;
+    background-image: url(../images/bongo-regular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.bongo-cat-section.active.left{
+    background-image: url(../images/bongo-left.png);
+}
+.bongo-cat-section.active.right{
+    background-image: url(../images/bongo-right.png);
+}
+.bongo-cat-section.active.both{
+    background-image: url(../images/bongo-both.png);
+}
+bongo cat*/
+
+/*тест зона*/
+
+.burger-menu-content{
+    border-right: black solid 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 235px;
+    height: 130%;
+    background-color: #B3907E;
+    padding: 20px 10px;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+.burger-menu-list{
+    flex-direction: column;
+    text-align: right;
+}
+
+.burger-menu-content.active{
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+}
+
+.smile_cat{
+    width: 262px;
+    height: 75px;
+    background: url(/images/cat_smile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.close_button{
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/close_button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.links-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.links-section>a{
+    font-size: 28px;
+}
+
+.links-section>a:hover{
+    text-decoration: underline;
+}
+
+.bongo-cat-section{
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 180px;
+    height: 80px;
+    background-color: #FCE4D8;
+    border: black solid 3px;
+    border-radius: 17px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+/*тест зона*/
+
+.main-nav a{
     font-family: "Cruinn";
     font-size: 2.5vw;
 }
 
-header a:nth-child(1){
+.main-nav a:nth-child(1){
     text-decoration: underline;
 }
 
 .main_title{
     background-color: #FCE4D8;
-    width: 38vw;
+    width: 32vw;
     height: 23vw;
     border-radius: 12px;
     border: #001858 solid 4px;
@@ -56,17 +173,17 @@ header a:nth-child(1){
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    padding-left: 3.5vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 
 }
 
 .main__container{
     display: flex;
     justify-content: space-between;
-    padding-top: 2%;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-top: 1%;
+    margin-right: 7%;
+    margin-left: 7%;
 }
 
 .main_links{
@@ -86,6 +203,7 @@ header a:nth-child(1){
     border-radius: 12px;
     border: #001858 solid 0.4vw;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
+    transition: 0.5s ease;
 }
 
 .block:hover{
@@ -100,6 +218,32 @@ header a:nth-child(1){
     to{
         transform: translateY(-4px);
     }
+}
+
+.main_links .block{
+    cursor: pointer;
+}
+
+.side_links .side_link{
+    cursor: pointer;
+}
+
+.click{
+    position: absolute;
+    background-image: url(../images/click.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    z-index: 3;
+}
+
+header .click{
+    transform: translate(8vw, 3.5vw);
+}
+
+.main_links .click{
+    transform: translate(12vw, 20vw);
 }
 
 .block1{
@@ -183,7 +327,7 @@ header a:nth-child(1){
     font-weight: 700;
     font-size: 3.5vw;
     margin: 0;
-    margin-left: 5vw;
+    margin-left: 3.3vw;
 }
 
 .text_links>p{
@@ -202,7 +346,7 @@ header a:nth-child(1){
 .side_links{
     display: flex;
     gap: 2vw;
-    margin-left: 3.9vw;
+    margin-left: 1.6vw;
 }
 
 .spotify{
@@ -251,7 +395,7 @@ header a:nth-child(1){
     width: 35vw;
     font-size: 1.6vw;
     margin-top: 12vw;
-    margin-left: 4.5vw;
+    margin-left: 1vw;
 }
 
 .author{
@@ -272,6 +416,27 @@ header a:nth-child(1){
 }
 
 @media (max-width: 500px) {
+
+    .burger-menu-content{
+        width: 150px;
+        height: 250vw;
+    }
+
+    .burger-menu-content a{
+        font-size: 20px;
+    }
+
+    .bongo-cat-section{
+        margin-top: 10%;
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .burger-menu{
+        background-image: url(../images/cat_icon_mobile.png);
+        width: 10vw;
+        height: 10vw;
+    }
 
     .cat_white_gif{
         background-image: url(../images/white_cat.gif);
@@ -325,14 +490,15 @@ header a:nth-child(1){
     header{
         margin-top: 2%;
         margin-bottom: 2%;
+        gap: 10vw;
     }
 
-    header nav{
+    .main-nav{
         gap: 12vw;
         margin-left: -3vw;
     }
 
-    header a{
+    .main-nav>a{
         font-size: 5vw;
         align-items: center;
     }
