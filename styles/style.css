@@ -203,7 +203,6 @@ bongo cat*/
     border-radius: 12px;
     border: #001858 solid 0.4vw;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
-    transition: 0.5s ease;
 }
 
 .block:hover{
@@ -239,7 +238,7 @@ bongo cat*/
 }
 
 header .click{
-    transform: translate(8vw, 3.5vw);
+    transform: translate(1vw, 3.5vw);
 }
 
 .main_links .click{
@@ -312,7 +311,7 @@ header .click{
     width: 12vw;
     height: 12vw;
     background-image: url(../images/avatar.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 113px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
@@ -401,10 +400,11 @@ header .click{
 
 .author{
     font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 1.2vw;
+    font-weight: 700;
+    font-size: 1.5vw;
     margin-left: 5%;
     margin-bottom: 1%;
+    margin-top: 2vw;
 }
 
 .cat_white_gif{
@@ -417,6 +417,12 @@ header .click{
 }
 
 @media (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
     .click{
         width: 10vw;
         height: 10vw;
